@@ -3,56 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bazari - Marketplace Marocain</title>
+  <title>Bazari - Mode entre particuliers</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-600">Bazari 🛍️</h1>
-      <nav>
-        <ul class="flex space-x-4 text-sm">
-          <li><a href="#" class="hover:text-pink-600">Accueil</a></li>
-          <li><a href="#" class="hover:text-pink-600">Produits</a></li>
-          <li><a href="#" class="hover:text-pink-600">Vendre</a></li>
-          <li><a href="#" class="hover:text-pink-600">Contact</a></li>
-        </ul>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">Bazari 🧕🏽</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-pink-600">Accueil</a>
+        <a href="#produits" class="hover:text-pink-600">Articles</a>
+        <a href="#vendre" class="hover:text-pink-600">Vendre</a>
+        <a href="#relai" class="hover:text-pink-600">Relais</a>
+        <a href="#mentions" class="hover:text-pink-600">Mentions</a>
+        <a href="#contact" class="hover:text-pink-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="text-center py-20 bg-gradient-to-r from-pink-100 to-yellow-100">
-    <h2 class="text-4xl font-bold mb-4">Bienvenue sur Bazari</h2>
-    <p class="text-lg text-gray-700 mb-6">La marketplace marocaine pour acheter & vendre vos trésors 🌍</p>
-    <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">
-      Explorer les articles
-    </a>
+  <section class="bg-gradient-to-r from-pink-100 to-yellow-100 py-20 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Bazari, la plateforme marocaine de mode seconde main</h2>
+    <p class="text-lg mb-6 text-gray-700">Un espace 100% local pour la mode seconde main entre particuliers 🇲🇦</p>
+    <a href="#produits" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition">Découvrir les articles</a>
   </section>
 
-  <section class="max-w-6xl mx-auto px-4 py-12">
-    <h3 class="text-2xl font-semibold mb-6">Catégories populaires</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://via.placeholder.com/150" alt="Mode" class="mx-auto mb-2" />
-        <p class="font-medium">Mode</p>
+  <section id="produits" class="max-w-7xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-semibold mb-8 text-center">Articles populaires</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
+        <img src="https://source.unsplash.com/400x400/?moroccan,dress" alt="Robe marocaine" class="rounded mb-4">
+        <h4 class="font-semibold text-lg">Robe traditionnelle</h4>
+        <p class="text-sm text-gray-600">Taille M - Casablanca</p>
+        <p class="text-pink-600 font-bold mt-2">200 DH</p>
       </div>
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://via.placeholder.com/150" alt="Électronique" class="mx-auto mb-2" />
-        <p class="font-medium">Électronique</p>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
+        <img src="https://source.unsplash.com/400x400/?fashion,sneakers" alt="Sneakers stylées" class="rounded mb-4">
+        <h4 class="font-semibold text-lg">Sneakers stylées</h4>
+        <p class="text-sm text-gray-600">Taille 42 - Rabat</p>
+        <p class="text-pink-600 font-bold mt-2">350 DH</p>
       </div>
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://via.placeholder.com/150" alt="Maison" class="mx-auto mb-2" />
-        <p class="font-medium">Maison</p>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
+        <img src="https://source.unsplash.com/400x400/?handbag,vintage" alt="Sac vintage" class="rounded mb-4">
+        <h4 class="font-semibold text-lg">Sac vintage cuir</h4>
+        <p class="text-sm text-gray-600">Tanger</p>
+        <p class="text-pink-600 font-bold mt-2">220 DH</p>
       </div>
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://via.placeholder.com/150" alt="Beauté" class="mx-auto mb-2" />
-        <p class="font-medium">Beauté</p>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
+        <img src="https://source.unsplash.com/400x400/?scarf,style" alt="Foulard élégant" class="rounded mb-4">
+        <h4 class="font-semibold text-lg">Foulard soyeux</h4>
+        <p class="text-sm text-gray-600">Fès</p>
+        <p class="text-pink-600 font-bold mt-2">90 DH</p>
       </div>
     </div>
   </section>
 
-  <footer class="bg-white text-center py-6 shadow-inner">
-    <p class="text-sm text-gray-500">© 2025 Bazari – Tous droits réservés</p>
+  <section id="vendre" class="bg-white py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-4">Vendez vos articles simplement</h3>
+      <p class="mb-6 text-gray-600">Prenez une photo, fixez un prix, choisissez un relais, et publiez !</p>
+      <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Commencer à vendre</a>
+    </div>
+  </section>
+
+  <section id="relai" class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Relais de livraison partenaires</h3>
+      <p class="text-center text-gray-600 mb-8">Faites livrer ou récupérez vos colis dans l’un de nos relais disponibles dans les hangouts et quartiers populaires du Maroc.</p>
+      <ul class="grid md:grid-cols-3 gap-6 text-center">
+        <li class="bg-white p-4 rounded shadow">📍 Marjane Casablanca</li>
+        <li class="bg-white p-4 rounded shadow">📍 Gare Rabat Agdal</li>
+        <li class="bg-white p-4 rounded shadow">📍 Café Les Hangout, Marrakech</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="mentions" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Mentions légales & CGV</h3>
+      <p class="text-sm text-gray-700 mb-4">Bazari est une plateforme communautaire marocaine destinée à la vente entre particuliers. Les transactions sont effectuées sous l'entière responsabilité des utilisateurs. Bazari ne prend pas de commission sur les ventes et agit en tant qu'intermédiaire technique.</p>
+      <p class="text-sm text-gray-700 mb-4">En publiant un article, vous déclarez être le propriétaire du bien et acceptez de respecter les lois marocaines sur la vente de biens d'occasion. Aucun article interdit à la vente (contrefaçons, produits dangereux, etc.) ne sera toléré. Les utilisateurs peuvent signaler un contenu inapproprié à contact@bazari.ma.</p>
+      <p class="text-sm text-gray-700">Conformément à la législation marocaine, les informations personnelles collectées via les formulaires sont traitées dans le respect de la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Bazari</h4>
+        <p class="text-sm">Fait avec ❤️ au Maroc - Projet communautaire</p>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <p class="text-sm">Contact : <a href="mailto:contact@bazari.ma" class="underline">contact@bazari.ma</a></p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
