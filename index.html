@@ -1,210 +1,58 @@
-<html lang="fr">
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bazari - Marketplace Maroc</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    nav {
-      background-color: #4CAF50;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
-    nav .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: white;
-    }
-    nav a {
-      color: white;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1581101767113-d8ba1b7f032b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      text-align: center;
-      padding: 6rem 1rem;
-      font-size: 2rem;
-      color: white;
-      font-weight: bold;
-      text-shadow: 1px 1px 4px #000;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .product {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-    .product h3 {
-      margin: 0.5rem 0 0.2rem;
-    }
-    .product p {
-      color: #e67e22;
-      font-weight: bold;
-    }
-    form {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin: 3rem auto;
-    }
-    form input, form textarea, form select {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background: #4CAF50;
-      color: white;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .valeurs {
-      background-color: #ffffff;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .valeurs h2 {
-      color: #4CAF50;
-      margin-bottom: 1rem;
-    }
-    .valeurs p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .contact {
-      background-color: #fff;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .contact h2 {
-      color: #4CAF50;
-      margin-bottom: 1rem;
-    }
-    .contact form {
-      max-width: 500px;
-      margin: auto;
-    }
-    .contact input, .contact textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bazari - Marketplace Marocain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav>
-    <div class="logo">Bazari</div>
-    <div>
-      <a href="#">Accueil</a>
-      <a href="#produits">Produits</a>
-      <a href="#deposer">Déposer une annonce</a>
-      <a href="#moncompte">Mon compte</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">Bazari 🛍️</h1>
+      <nav>
+        <ul class="flex space-x-4 text-sm">
+          <li><a href="#" class="hover:text-pink-600">Accueil</a></li>
+          <li><a href="#" class="hover:text-pink-600">Produits</a></li>
+          <li><a href="#" class="hover:text-pink-600">Vendre</a></li>
+          <li><a href="#" class="hover:text-pink-600">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
-  <div class="hero">Bienvenue sur Bazari — Le Maroc s'échange ici !</div>
-  <div class="section" id="produits">
-    <h2>Articles en vedette</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/400x300?text=Caftan+de+Luxe" alt="Caftan de Luxe">
-        <h3>Caftan en soie brodée</h3>
-        <p>1 200 MAD</p>
+  </header>
+
+  <section class="text-center py-20 bg-gradient-to-r from-pink-100 to-yellow-100">
+    <h2 class="text-4xl font-bold mb-4">Bienvenue sur Bazari</h2>
+    <p class="text-lg text-gray-700 mb-6">La marketplace marocaine pour acheter & vendre vos trésors 🌍</p>
+    <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">
+      Explorer les articles
+    </a>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Catégories populaires</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded shadow text-center">
+        <img src="https://via.placeholder.com/150" alt="Mode" class="mx-auto mb-2" />
+        <p class="font-medium">Mode</p>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/400x300?text=Chaussures+Deluxe" alt="Chaussures Deluxe">
-        <h3>Babouches en cuir premium</h3>
-        <p>450 MAD</p>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <img src="https://via.placeholder.com/150" alt="Électronique" class="mx-auto mb-2" />
+        <p class="font-medium">Électronique</p>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/400x300?text=Jean+Casual" alt="Jean">
-        <h3>Jean slim Levi’s</h3>
-        <p>180 MAD</p>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <img src="https://via.placeholder.com/150" alt="Maison" class="mx-auto mb-2" />
+        <p class="font-medium">Maison</p>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/400x300?text=Accessoires" alt="Accessoires">
-        <h3>Ceinture tressée artisanale</h3>
-        <p>90 MAD</p>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <img src="https://via.placeholder.com/150" alt="Beauté" class="mx-auto mb-2" />
+        <p class="font-medium">Beauté</p>
       </div>
     </div>
-  </div>
-  <form id="deposer">
-    <h2>Déposer une annonce</h2>
-    <input type="text" placeholder="Nom de l'article" required>
-    <input type="text" placeholder="Marque (facultatif)">
-    <input type="number" placeholder="Prix (MAD)" required>
-    <select required>
-      <option value="">-- Catégorie --</option>
-      <option>Vêtements</option>
-      <option>Chaussures</option>
-      <option>Accessoires</option>
-      <option>Artisanat</option>
-    </select>
-    <textarea placeholder="Description de l'article" rows="4" required></textarea>
-    <input type="file" accept="image/*" required>
-    <button type="submit">Publier</button>
-  </form>
-  <div class="valeurs">
-    <h2>Nos valeurs</h2>
-    <p>Bazari est plus qu'une simple plateforme. C'est une communauté engagée pour une consommation responsable, la valorisation du savoir-faire marocain, et la création de liens de confiance entre particuliers.</p>
-  </div>
-  <div class="contact" id="contact">
-    <h2>Contact & Newsletter</h2>
-    <form>
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre adresse e-mail" required>
-      <textarea placeholder="Votre message ou commentaire"></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </div>
+  </section>
+
+  <footer class="bg-white text-center py-6 shadow-inner">
+    <p class="text-sm text-gray-500">© 2025 Bazari – Tous droits réservés</p>
+  </footer>
 </body>
 </html>
-
