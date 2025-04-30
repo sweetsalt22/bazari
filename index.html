@@ -7,8 +7,6 @@
   <meta name="description" content="Bazari est la première plateforme marocaine dédiée à la mode seconde main entre particuliers. Vendez ou achetez des vêtements élégants, modernes ou traditionnels, pour toute la famille." />
   <meta name="keywords" content="seconde main, bazar, vêtements marocains, mode femme, mode homme, enfants, tradition, modernité, Casablanca, Rabat, Marrakech" />
   <meta name="author" content="Bazari.ma" />
-
-  <!-- Open Graph pour réseaux sociaux -->
   <meta property="og:title" content="Bazari – Mode seconde main au Maroc" />
   <meta property="og:description" content="Achetez et vendez vos vêtements avec style sur Bazari. Une plateforme communautaire marocaine, entre tradition et modernité." />
   <meta property="og:image" content="https://sweetsalt22.github.io/bazari/og-image.jpg" />
@@ -25,19 +23,17 @@
       font-family: 'Inter', sans-serif;
       letter-spacing: -0.5px;
     }
-    img {
-      object-fit: cover;
-    }
   </style>
 </head>
 <body class="bg-white text-gray-900">
-  <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-pink-600">Bazari</h1>
-      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium tracking-tight">
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
         <a href="#" class="hover:text-pink-600">Accueil</a>
         <a href="#produits" class="hover:text-pink-600">Articles</a>
-        <a href="#vendre" class="hover:text-pink-600">Vendre</a>
+        <a href="#formulaire-produit" class="hover:text-pink-600">Vendre</a>
         <a href="#relai" class="hover:text-pink-600">Relais</a>
         <a href="#mentions" class="hover:text-pink-600">Mentions</a>
         <a href="#contact" class="hover:text-pink-600">Contact</a>
@@ -45,148 +41,52 @@
     </div>
   </header>
 
-  <section class="bg-gradient-to-r from-pink-100 to-yellow-100 py-20 text-center border-t border-b border-gray-200">
-    <div class="max-w-4xl mx-auto mb-8">
-      <img src="/mnt/data/A_photograph_of_a_Moroccan_family_of_five,_showcas.png" alt="Famille marocaine élégante" class="mx-auto rounded-lg shadow-lg w-full h-auto max-w-3xl">
+  <!-- Hero section -->
+  <section class="relative bg-gradient-to-br from-pink-100 to-yellow-100 py-16 text-center">
+    <div class="max-w-4xl mx-auto mb-6">
+      <img src="/mnt/data/A_photograph_of_a_Moroccan_family_of_five,_showcas.png" alt="Famille marocaine élégante" class="mx-auto rounded-lg shadow-lg w-full max-w-3xl">
     </div>
-    <h2 class="text-4xl font-extrabold mb-4">Bazari, la plateforme marocaine de mode seconde main</h2>
-    <p class="text-lg mb-6 text-gray-700">Un espace 100% local pour la mode seconde main entre particuliers 🇲🇦</p>
-    <a href="#produits" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition">Découvrir les articles</a>
+    <h2 class="text-4xl font-extrabold mb-3">Bazari, la plateforme marocaine de mode seconde main</h2>
+    <p class="text-lg text-gray-700 mb-5">Des vêtements élégants pour toute la famille, entre tradition et modernité 🇲🇦</p>
+    <a href="#produits" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">Voir les articles</a>
   </section>
 
-  <section id="produits" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50 border-t border-b border-gray-200">
-    <h3 class="text-3xl font-semibold mb-8 text-center">Articles populaires</h3>
-    $1
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?fashion,young,man,editorial,modern,style" alt="Homme jeune stylé" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Blazer chic jeune homme</h4>
-        <p class="text-sm text-gray-600">Taille M - Casablanca</p>
-        <p class="text-pink-600 font-bold mt-2">320 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?moroccan,kaftan,senior,woman,elegant,colorful,styled,editorial" alt="Mode femme 50+" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Manteau élégant femme 50+</h4>
-        <p class="text-sm text-gray-600">Taille L - Mohammedia</p>
-        <p class="text-pink-600 font-bold mt-2">250 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?moroccan,jellaba,senior,man,elegant,fashion,color,styled" alt="Style homme 50+" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Pull col roulé homme 50+</h4>
-        <p class="text-sm text-gray-600">Taille XL - Agadir</p>
-        <p class="text-pink-600 font-bold mt-2">280 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?elegant,men,outfit,modern,runway" alt="Veste homme chic" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Veste casual homme</h4>
-        <p class="text-sm text-gray-600">Taille L - Casablanca</p>
-        <p class="text-pink-600 font-bold mt-2">300 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?kids,fashion,editorial,stylish" alt="Tenue enfant tendance" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Ensemble enfant moderne</h4>
-        <p class="text-sm text-gray-600">6-8 ans - Fès</p>
-        <p class="text-pink-600 font-bold mt-2">120 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?luxury,dress,highfashion" alt="Robe de soirée luxe" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Robe de soirée de luxe</h4>
-        <p class="text-sm text-gray-600">Taille S - Rabat</p>
-        <p class="text-pink-600 font-bold mt-2">700 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?moroccan,jellaba,man,fashion,color,elegant,styled" alt="Jellaba homme" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Jellaba marocaine homme</h4>
-        <p class="text-sm text-gray-600">Taille XL - Meknès</p>
-        <p class="text-pink-600 font-bold mt-2">180 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?moroccan,dress,colorful,embroidery,styled,highfashion" alt="Robe marocaine" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Robe traditionnelle</h4>
-        <p class="text-sm text-gray-600">Taille M - Casablanca</p>
-        <p class="text-pink-600 font-bold mt-2">200 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?sneakers,style,editorial" alt="Sneakers stylées" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Sneakers stylées</h4>
-        <p class="text-sm text-gray-600">Taille 42 - Rabat</p>
-        <p class="text-pink-600 font-bold mt-2">350 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?handbag,vintage" alt="Sac vintage" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Sac vintage cuir</h4>
-        <p class="text-sm text-gray-600">Tanger</p>
-        <p class="text-pink-600 font-bold mt-2">220 DH</p>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
-        <img src="https://source.unsplash.com/400x400/?silk,scarf,colorful,fashion,styled,shoot" alt="Foulard élégant" class="rounded mb-4">
-        <h4 class="font-semibold text-lg">Foulard soyeux</h4>
-        <p class="text-sm text-gray-600">Fès</p>
-        <p class="text-pink-600 font-bold mt-2">90 DH</p>
+  <!-- Produits -->
+  <section id="produits" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-10 text-center">Articles populaires</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Les cartes produits iront ici, à compléter ensuite -->
+        <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg">
+          <img src="https://source.unsplash.com/400x400/?moroccan,dress,colorful" alt="Robe traditionnelle" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Robe traditionnelle</h4>
+            <p class="text-sm text-gray-600">Casablanca – Taille M</p>
+            <p class="text-pink-600 font-bold">200 DH</p>
+          </div>
+        </div>
+        <!-- + autres produits à ajouter ici -->
       </div>
     </div>
   </section>
 
-  $1
-
-<section id="formulaire-produit" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
-  <div class="max-w-3xl mx-auto">
-    <h3 class="text-2xl font-semibold mb-6 text-center">Publier un article</h3>
-    <form class="space-y-6">
-      <div>
-        <label for="nom" class="block text-sm font-medium text-gray-700">Nom de l'article</label>
-        <input type="text" id="nom" name="nom" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
-      </div>
-      <div>
-        <label for="categorie" class="block text-sm font-medium text-gray-700">Catégorie</label>
-        <select id="categorie" name="categorie" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
-          <option>Femme</option>
-          <option>Homme</option>
-          <option>Enfant</option>
-          <option>Accessoires</option>
-        </select>
-      </div>
-      <div>
-        <label for="prix" class="block text-sm font-medium text-gray-700">Prix (DH)</label>
-        <input type="number" id="prix" name="prix" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
-      </div>
-      <div>
-        <label for="photo" class="block text-sm font-medium text-gray-700">Photo de l'article</label>
-        <input type="file" id="photo" name="photo" accept="image/*" class="mt-1 block w-full">
-      </div>
-      <div>
-        <label for="ville" class="block text-sm font-medium text-gray-700">Ville</label>
-        <input type="text" id="ville" name="ville" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
-      </div>
-      <div class="text-center">
-        <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700">Publier</button>
-      </div>
-    </form>
-  </div>
-</section>
-  </section>
-
-  <section id="relai" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-6 text-center">Relais de livraison partenaires</h3>
-      <p class="text-center text-gray-600 mb-8">Faites livrer ou récupérez vos colis dans l’un de nos relais disponibles dans les hangouts et quartiers populaires du Maroc.</p>
-      <ul class="grid md:grid-cols-3 gap-6 text-center">
-        <li class="bg-white p-4 rounded shadow">📍 Marjane Casablanca</li>
-        <li class="bg-white p-4 rounded shadow">📍 Gare Rabat Agdal</li>
-        <li class="bg-white p-4 rounded shadow">📍 Café Les Hangout, Marrakech</li>
-      </ul>
+  <!-- Formulaire de vente -->
+  <section id="formulaire-produit" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-b">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Publier un article</h3>
+      <form class="space-y-6">
+        <input type="text" placeholder="Nom de l'article" class="w-full border p-3 rounded-md" />
+        <input type="text" placeholder="Catégorie (ex : Femme, Homme...)" class="w-full border p-3 rounded-md" />
+        <input type="number" placeholder="Prix (DH)" class="w-full border p-3 rounded-md" />
+        <input type="file" class="w-full" />
+        <input type="text" placeholder="Ville" class="w-full border p-3 rounded-md" />
+        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-md hover:bg-pink-700">Publier</button>
+      </form>
     </div>
   </section>
 
-  <section id="mentions" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Mentions légales & CGV</h3>
-      <p class="text-sm text-gray-700 mb-4">Bazari est une plateforme communautaire marocaine destinée à la vente entre particuliers. Les transactions sont effectuées sous l'entière responsabilité des utilisateurs. Bazari ne prend pas de commission sur les ventes et agit en tant qu'intermédiaire technique.</p>
-      <p class="text-sm text-gray-700 mb-4">En publiant un article, vous déclarez être le propriétaire du bien et acceptez de respecter les lois marocaines sur la vente de biens d'occasion. Aucun article interdit à la vente (contrefaçons, produits dangereux, etc.) ne sera toléré. Les utilisateurs peuvent signaler un contenu inapproprié à contact@bazari.ma.</p>
-      <p class="text-sm text-gray-700">Conformément à la législation marocaine, les informations personnelles collectées via les formulaires sont traitées dans le respect de la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.</p>
-    </div>
-  </section>
-
-  <footer id="contact" class="bg-gray-900 text-white py-10 mt-16 border-t border-gray-800">
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-10 mt-16 border-t">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
       <div>
         <h4 class="text-lg font-semibold mb-2">Bazari</h4>
