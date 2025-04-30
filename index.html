@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bazari - Mode entre particuliers</title>
+  <title>Bazari – Mode seconde main au Maroc</title>
+  <meta name="description" content="Bazari est la première plateforme marocaine dédiée à la mode seconde main entre particuliers. Vendez ou achetez des vêtements élégants, modernes ou traditionnels, pour toute la famille." />
+  <meta name="keywords" content="seconde main, bazar, vêtements marocains, mode femme, mode homme, enfants, tradition, modernité, Casablanca, Rabat, Marrakech" />
+  <meta name="author" content="Bazari.ma" />
+
+  <!-- Open Graph pour réseaux sociaux -->
+  <meta property="og:title" content="Bazari – Mode seconde main au Maroc" />
+  <meta property="og:description" content="Achetez et vendez vos vêtements avec style sur Bazari. Une plateforme communautaire marocaine, entre tradition et modernité." />
+  <meta property="og:image" content="https://sweetsalt22.github.io/bazari/og-image.jpg" />
+  <meta property="og:url" content="https://sweetsalt22.github.io/bazari/" />
+  <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.5px;
+    }
+    img {
+      object-fit: cover;
+    }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow-md sticky top-0 z-50">
+<body class="bg-white text-gray-900">
+  <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-600">Bazari 🧕🏽</h1>
-      <nav class="hidden md:flex space-x-6">
+      <h1 class="text-2xl font-bold text-pink-600">Bazari</h1>
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium tracking-tight">
         <a href="#" class="hover:text-pink-600">Accueil</a>
         <a href="#produits" class="hover:text-pink-600">Articles</a>
         <a href="#vendre" class="hover:text-pink-600">Vendre</a>
@@ -26,7 +45,7 @@
     </div>
   </header>
 
-  <section class="bg-gradient-to-r from-pink-100 to-yellow-100 py-20 text-center">
+  <section class="bg-gradient-to-r from-pink-100 to-yellow-100 py-20 text-center border-t border-b border-gray-200">
     <div class="max-w-4xl mx-auto mb-8">
       <img src="/mnt/data/A_photograph_of_a_Moroccan_family_of_five,_showcas.png" alt="Famille marocaine élégante" class="mx-auto rounded-lg shadow-lg w-full h-auto max-w-3xl">
     </div>
@@ -35,7 +54,7 @@
     <a href="#produits" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition">Découvrir les articles</a>
   </section>
 
-  <section id="produits" class="max-w-7xl mx-auto px-6 py-16">
+  <section id="produits" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50 border-t border-b border-gray-200">
     <h3 class="text-3xl font-semibold mb-8 text-center">Articles populaires</h3>
     $1
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl">
@@ -107,15 +126,46 @@
     </div>
   </section>
 
-  <section id="vendre" class="bg-white py-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-3xl font-semibold mb-4">Vendez vos articles simplement</h3>
-      <p class="mb-6 text-gray-600">Prenez une photo, fixez un prix, choisissez un relais, et publiez !</p>
-      <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Commencer à vendre</a>
-    </div>
+  $1
+
+<section id="formulaire-produit" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Publier un article</h3>
+    <form class="space-y-6">
+      <div>
+        <label for="nom" class="block text-sm font-medium text-gray-700">Nom de l'article</label>
+        <input type="text" id="nom" name="nom" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
+      </div>
+      <div>
+        <label for="categorie" class="block text-sm font-medium text-gray-700">Catégorie</label>
+        <select id="categorie" name="categorie" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
+          <option>Femme</option>
+          <option>Homme</option>
+          <option>Enfant</option>
+          <option>Accessoires</option>
+        </select>
+      </div>
+      <div>
+        <label for="prix" class="block text-sm font-medium text-gray-700">Prix (DH)</label>
+        <input type="number" id="prix" name="prix" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
+      </div>
+      <div>
+        <label for="photo" class="block text-sm font-medium text-gray-700">Photo de l'article</label>
+        <input type="file" id="photo" name="photo" accept="image/*" class="mt-1 block w-full">
+      </div>
+      <div>
+        <label for="ville" class="block text-sm font-medium text-gray-700">Ville</label>
+        <input type="text" id="ville" name="ville" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-pink-500 focus:border-pink-500">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700">Publier</button>
+      </div>
+    </form>
+  </div>
+</section>
   </section>
 
-  <section id="relai" class="bg-gray-50 py-16 px-6">
+  <section id="relai" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
     <div class="max-w-4xl mx-auto">
       <h3 class="text-3xl font-semibold mb-6 text-center">Relais de livraison partenaires</h3>
       <p class="text-center text-gray-600 mb-8">Faites livrer ou récupérez vos colis dans l’un de nos relais disponibles dans les hangouts et quartiers populaires du Maroc.</p>
@@ -127,7 +177,7 @@
     </div>
   </section>
 
-  <section id="mentions" class="bg-white py-16 px-6">
+  <section id="mentions" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
     <div class="max-w-5xl mx-auto">
       <h3 class="text-2xl font-semibold mb-4">Mentions légales & CGV</h3>
       <p class="text-sm text-gray-700 mb-4">Bazari est une plateforme communautaire marocaine destinée à la vente entre particuliers. Les transactions sont effectuées sous l'entière responsabilité des utilisateurs. Bazari ne prend pas de commission sur les ventes et agit en tant qu'intermédiaire technique.</p>
@@ -136,7 +186,7 @@
     </div>
   </section>
 
-  <footer id="contact" class="bg-gray-900 text-white py-8">
+  <footer id="contact" class="bg-gray-900 text-white py-10 mt-16 border-t border-gray-800">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
       <div>
         <h4 class="text-lg font-semibold mb-2">Bazari</h4>
@@ -149,3 +199,6 @@
   </footer>
 </body>
 </html>
+
+        
+   
